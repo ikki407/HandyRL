@@ -1,4 +1,4 @@
-# HandyRL: Quick Start Easy to Win
+# HandyRL
 
 ![](https://github.com/DeNA/HandyRL/workflows/pytest/badge.svg?branch=master)
 
@@ -130,19 +130,7 @@ The kind of your games are:
 To see all methods of environment, check [environment.py](https://github.com/DeNA/HandyRL/blob/master/handyrl/environment.py).
 
 
-## Frequently Asked Questions
-
-
-
-*   How to use rule-based AI as an opponent?
-    *   You can easily use it by creating a rule-based AI method `rule_based_action()` in a class `Environment`.
-*   How to change the opponent in evaluation?
-    *   Set your agent in `environment.py` like `agents = [agent1, YourAgent()]`
-
-
 ## Use case
-
-
 
 *   [The 5th solution in Google Research Football with Manchester City F.C.](https://www.kaggle.com/c/google-football/discussion/203412) (Kaggle)
 *   [Baseline RL AI in Hungry Geese](https://www.kaggle.com/yuricat/smart-geese-trained-by-reinforcement-learning) (Kaggle)
