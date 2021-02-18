@@ -1,5 +1,8 @@
 ![HandyRL](logo.png)
 
+![HandyRL2](logo2.png)
+
+
 ![](https://github.com/DeNA/HandyRL/workflows/pytest/badge.svg?branch=master)
 
 **HandyRL is a handy and simple framework for distributed reinforcement learning that is applicable to your own environments.**
