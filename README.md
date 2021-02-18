@@ -2,6 +2,7 @@
 
 ![HandyRL2](logo2.png)
 
+![HandyRL3](logo3.png)
 
 ![](https://github.com/DeNA/HandyRL/workflows/pytest/badge.svg?branch=master)
 
