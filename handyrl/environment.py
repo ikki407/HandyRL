@@ -39,6 +39,11 @@ def make_env(env_args):
 # base class of Environment
 
 class BaseEnvironment:
+    """A base environment class.
+
+    Args:
+        args (dict): arguments to initialize environment (e.g. make a simulator instance, reset an environment.)
+    """
     def __init__(self, args={}):
         pass
 
@@ -49,6 +54,11 @@ class BaseEnvironment:
     # Should be defined in all games
     #
     def reset(self, args={}):
+        """Reset an environment.
+
+        Args:
+            args (dict): arguments to reset an environment state (e.g. reset a reward, reset a state.)
+        """
         raise NotImplementedError()
 
     #

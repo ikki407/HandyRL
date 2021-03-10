@@ -12,6 +12,19 @@ from ..environment import BaseEnvironment
 
 
 class Environment(BaseEnvironment):
+    """test
+
+    Args:
+        x (int): 1st argument
+        y (int): 2nd argument
+
+    Returns:
+        int: sum result
+
+    Examples:
+        >>> print(testfunc(2,5))
+        7
+    """
     X, Y = 'ABC',  '123'
     BLACK, WHITE = 1, -1
     C = {0: '_', BLACK: 'O', WHITE: 'X'}
