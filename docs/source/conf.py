@@ -63,3 +63,8 @@ from recommonmark.parser import CommonMarkParser
 source_parsers = {
     '.md': CommonMarkParser,
 }
+
+rst_prolog = """
+:github_url: https://github.com/DeNA/HandyRL
+
+"""

@@ -1,4 +1,4 @@
-util module
+util
 ===========
 
 .. automodule:: handyrl.util

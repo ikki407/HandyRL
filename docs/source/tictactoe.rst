@@ -1,4 +1,4 @@
-tictactoe module
+tictactoe
 ================
 
 .. automodule:: handyrl.envs.tictactoe

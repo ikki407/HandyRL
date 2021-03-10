@@ -1,4 +1,4 @@
-worker module
+worker
 =============
 
 .. automodule:: handyrl.worker

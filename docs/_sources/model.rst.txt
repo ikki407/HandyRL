@@ -1,4 +1,4 @@
-model module
+model
 ============
 
 .. automodule:: handyrl.model

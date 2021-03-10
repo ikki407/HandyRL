@@ -1,4 +1,4 @@
-train module
+train
 ============
 
 .. automodule:: handyrl.train

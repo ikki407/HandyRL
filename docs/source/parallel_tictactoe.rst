@@ -1,4 +1,4 @@
-parallel\_tictactoe module
+parallel\_tictactoe
 ==========================
 
 .. automodule:: handyrl.envs.parallel_tictactoe

@@ -20,6 +20,6 @@ sphinx-apidoc -f -o ./docs/source ./handyrl/envs/kaggle
 
 Build docs.
 ```
-cp -r docs/tutorial docs/documentation docs/source
+cp -r docs/tutorial docs/documentation docs/faq docs/source
 sphinx-build -b html ./docs/source ./docs
 ```
