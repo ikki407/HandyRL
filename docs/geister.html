@@ -86,10 +86,14 @@
             
               <p class="caption"><span class="caption-text">Tutorials:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="parameters.html">Config Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="large_scale_training.html">Large Scale Training</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_environment.html">Train with Customized Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/tictactoe.html">Train AI Model for Tic-Tac-Toe</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentaion:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/parameters.html">Config Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/large_scale_training.html">Large Scale Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/custom_environment.html">Train with Customized Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/api.html">API</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Modules:</span></p>
 <ul>
@@ -178,7 +182,7 @@
 <span id="geister"></span><h1>geister<a class="headerlink" href="#module-handyrl.envs.geister" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="handyrl.envs.geister.Environment">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.geister.</span></code><code class="sig-name descname"><span class="pre">Environment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.geister.</span></code><code class="sig-name descname"><span class="pre">Environment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="environment.html#handyrl.environment.BaseEnvironment" title="handyrl.environment.BaseEnvironment"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.environment.BaseEnvironment</span></code></a></p>
 <dl class="py attribute">
 <dt id="handyrl.envs.geister.Environment.BLACK">
@@ -247,137 +251,137 @@
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.action2direction">
-<code class="sig-name descname"><span class="pre">action2direction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.action2direction" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action2direction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.action2direction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.action2direction" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.action2from">
-<code class="sig-name descname"><span class="pre">action2from</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.action2from" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action2from</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.action2from"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.action2from" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.action2str">
-<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.action2str" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.action2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.action2str" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.action2to">
-<code class="sig-name descname"><span class="pre">action2to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.action2to" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action2to</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.action2to"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.action2to" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.action_length">
-<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.action_length" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.action_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.action_length" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.colortype2piece">
-<code class="sig-name descname"><span class="pre">colortype2piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.colortype2piece" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">colortype2piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">t</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.colortype2piece"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.colortype2piece" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.diff_info">
-<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.diff_info" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.diff_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.diff_info" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.fromdirection2action">
-<code class="sig-name descname"><span class="pre">fromdirection2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.fromdirection2action" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">fromdirection2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.fromdirection2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.fromdirection2action" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.goal">
-<code class="sig-name descname"><span class="pre">goal</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.goal" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">goal</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.goal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.goal" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.legal">
-<code class="sig-name descname"><span class="pre">legal</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.legal" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">legal</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.legal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.legal" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.legal_actions">
-<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.legal_actions" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.legal_actions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.legal_actions" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.move_piece">
-<code class="sig-name descname"><span class="pre">move_piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">piece</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_to</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.move_piece" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">move_piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">piece</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_to</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.move_piece"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.move_piece" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.net">
-<code class="sig-name descname"><span class="pre">net</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.net" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">net</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.net"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.net" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.observation">
-<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.observation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.observation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.observation" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.onboard">
-<code class="sig-name descname"><span class="pre">onboard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.onboard" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">onboard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.onboard"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.onboard" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.opponent">
-<code class="sig-name descname"><span class="pre">opponent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.opponent" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">opponent</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.opponent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.opponent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.outcome">
-<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.outcome" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.outcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.outcome" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.piece2color">
-<code class="sig-name descname"><span class="pre">piece2color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.piece2color" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">piece2color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.piece2color"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.piece2color" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.piece2type">
-<code class="sig-name descname"><span class="pre">piece2type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.piece2type" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">piece2type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.piece2type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.piece2type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.play">
-<code class="sig-name descname"><span class="pre">play</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.play" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">play</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.play"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.play" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.players">
-<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.players" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.players"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.players" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.position2str">
-<code class="sig-name descname"><span class="pre">position2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.position2str" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">position2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.position2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.position2str" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.position_string">
-<code class="sig-name descname"><span class="pre">position_string</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.position_string" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">position_string</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.position_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.position_string" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.put_piece">
-<code class="sig-name descname"><span class="pre">put_piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">piece</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">piece_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.put_piece" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">put_piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">piece</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">piece_idx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.put_piece"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.put_piece" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.record_string">
-<code class="sig-name descname"><span class="pre">record_string</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.record_string" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">record_string</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.record_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.record_string" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.remove_piece">
-<code class="sig-name descname"><span class="pre">remove_piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">piece</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.remove_piece" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">remove_piece</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">piece</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.remove_piece"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.remove_piece" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.reset">
-<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.reset" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reset an environment.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -388,53 +392,53 @@
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.reward">
-<code class="sig-name descname"><span class="pre">reward</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.reward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">reward</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.reward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.reward" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.rotate">
-<code class="sig-name descname"><span class="pre">rotate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.rotate" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">rotate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.rotate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.rotate" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.set_pieces">
-<code class="sig-name descname"><span class="pre">set_pieces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq_idx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.set_pieces" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">set_pieces</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seq_idx</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.set_pieces"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.set_pieces" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.str2action">
-<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.str2action" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.str2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.str2action" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.str2position">
-<code class="sig-name descname"><span class="pre">str2position</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.str2position" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">str2position</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.str2position"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.str2position" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.terminal">
-<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.terminal" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.terminal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.terminal" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.turn">
-<code class="sig-name descname"><span class="pre">turn</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.turn" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">turn</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.turn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.turn" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.Environment.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.Environment.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#Environment.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.Environment.update" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="handyrl.envs.geister.GeisterNet">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.geister.</span></code><code class="sig-name descname"><span class="pre">GeisterNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.GeisterNet" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.geister.</span></code><code class="sig-name descname"><span class="pre">GeisterNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#GeisterNet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.GeisterNet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="model.html#handyrl.model.BaseModel" title="handyrl.model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.model.BaseModel</span></code></a></p>
 <dl class="py method">
 <dt id="handyrl.envs.geister.GeisterNet.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.GeisterNet.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#GeisterNet.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.GeisterNet.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -448,7 +452,7 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py method">
 <dt id="handyrl.envs.geister.GeisterNet.init_hidden">
-<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.geister.GeisterNet.init_hidden" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/geister.html#GeisterNet.init_hidden"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.geister.GeisterNet.init_hidden" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">

@@ -86,10 +86,14 @@
             
               <p class="caption"><span class="caption-text">Tutorials:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="parameters.html">Config Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="large_scale_training.html">Large Scale Training</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_environment.html">Train with Customized Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/tictactoe.html">Train AI Model for Tic-Tac-Toe</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentaion:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/parameters.html">Config Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/large_scale_training.html">Large Scale Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/custom_environment.html">Train with Customized Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/api.html">API</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Modules:</span></p>
 <ul class="current">
@@ -178,16 +182,16 @@
 <span id="model-module"></span><h1>model module<a class="headerlink" href="#module-handyrl.model" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="handyrl.model.BaseModel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">BaseModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.BaseModel" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">BaseModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#BaseModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.BaseModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.BaseModel.inference">
-<code class="sig-name descname"><span class="pre">inference</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.BaseModel.inference" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">inference</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#BaseModel.inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.BaseModel.inference" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.model.BaseModel.init_hidden">
-<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.BaseModel.init_hidden" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#BaseModel.init_hidden"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.BaseModel.init_hidden" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -199,11 +203,11 @@
 
 <dl class="py class">
 <dt id="handyrl.model.Conv">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Conv</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filters0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Conv" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Conv</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filters0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Conv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Conv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.Conv.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Conv.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Conv.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Conv.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -224,11 +228,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.ConvLSTMCell">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">ConvLSTMCell</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.ConvLSTMCell" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">ConvLSTMCell</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#ConvLSTMCell"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.ConvLSTMCell" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.ConvLSTMCell.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cur_state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.ConvLSTMCell.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_tensor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cur_state</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#ConvLSTMCell.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.ConvLSTMCell.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -242,7 +246,7 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py method">
 <dt id="handyrl.model.ConvLSTMCell.init_hidden">
-<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.ConvLSTMCell.init_hidden" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#ConvLSTMCell.init_hidden"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.ConvLSTMCell.init_hidden" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -254,11 +258,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.DRC">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">DRC</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.DRC" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">DRC</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#DRC"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.DRC" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.DRC.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_repeats</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.DRC.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_repeats</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#DRC.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.DRC.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -272,7 +276,7 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py method">
 <dt id="handyrl.model.DRC.init_hidden">
-<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.DRC.init_hidden" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">init_hidden</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#DRC.init_hidden"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.DRC.init_hidden" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -284,11 +288,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.Dense">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Dense</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">units0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bnunits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Dense" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Dense</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">units0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bnunits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Dense"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Dense" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.Dense.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Dense.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Dense.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Dense.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -309,11 +313,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.Encoder">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Encoder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Encoder" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Encoder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Encoder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Encoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.Encoder.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Encoder.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Encoder.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Encoder.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -334,11 +338,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.Head">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Head</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_filters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Head" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">Head</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_filters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outputs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Head"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Head" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.Head.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.Head.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#Head.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.Head.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -359,11 +363,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.RandomModel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">RandomModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.RandomModel" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">RandomModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#RandomModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.RandomModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#handyrl.model.BaseModel" title="handyrl.model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.model.BaseModel</span></code></a></p>
 <dl class="py method">
 <dt id="handyrl.model.RandomModel.inference">
-<code class="sig-name descname"><span class="pre">inference</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.RandomModel.inference" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">inference</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#RandomModel.inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.RandomModel.inference" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -375,11 +379,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.SimpleConv2dModel">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">SimpleConv2dModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.SimpleConv2dModel" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">SimpleConv2dModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#SimpleConv2dModel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.SimpleConv2dModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#handyrl.model.BaseModel" title="handyrl.model.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.model.BaseModel</span></code></a></p>
 <dl class="py method">
 <dt id="handyrl.model.SimpleConv2dModel.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.SimpleConv2dModel.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#SimpleConv2dModel.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.SimpleConv2dModel.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -400,11 +404,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.WideResNet">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">WideResNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.WideResNet" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">WideResNet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">blocks</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filters</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#WideResNet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.WideResNet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.WideResNet.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.WideResNet.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#WideResNet.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.WideResNet.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -425,11 +429,11 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py class">
 <dt id="handyrl.model.WideResidualBlock">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">WideResidualBlock</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.WideResidualBlock" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">WideResidualBlock</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filters</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#WideResidualBlock"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.WideResidualBlock" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
 <dt id="handyrl.model.WideResidualBlock.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.WideResidualBlock.forward" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#WideResidualBlock.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.WideResidualBlock.forward" title="Permalink to this definition">¶</a></dt>
 <dd><p>Defines the computation performed at every call.</p>
 <p>Should be overridden by all subclasses.</p>
 <div class="admonition note">
@@ -450,22 +454,22 @@ registered hooks while the latter silently ignores them.</p>
 
 <dl class="py function">
 <dt id="handyrl.model.to_gpu">
-<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_gpu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.to_gpu" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_gpu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#to_gpu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.to_gpu" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt id="handyrl.model.to_gpu_or_not">
-<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_gpu_or_not</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.to_gpu_or_not" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_gpu_or_not</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gpu</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#to_gpu_or_not"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.to_gpu_or_not" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt id="handyrl.model.to_numpy">
-<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_numpy</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.to_numpy" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_numpy</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#to_numpy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.to_numpy" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt id="handyrl.model.to_torch">
-<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_torch</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unsqueeze</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.model.to_torch" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">handyrl.model.</span></code><code class="sig-name descname"><span class="pre">to_torch</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transpose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unsqueeze</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/model.html#to_torch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.model.to_torch" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </div>

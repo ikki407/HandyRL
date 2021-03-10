@@ -10,10 +10,17 @@ Welcome to HandyRL's documentation!
    :maxdepth: 1
    :caption: Tutorials:
 
-   parameters
-   large_scale_training
-   custom_environment
-   api
+   tutorial/tictactoe
+* TODO: step-by-step toy problem
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Documentaion:
+
+   documentation/parameters
+   documentation/large_scale_training
+   documentation/custom_environment
+   documentation/api
 
 .. toctree::
    :maxdepth: 2

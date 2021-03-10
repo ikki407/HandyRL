@@ -86,10 +86,14 @@
             
               <p class="caption"><span class="caption-text">Tutorials:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="parameters.html">Config Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="large_scale_training.html">Large Scale Training</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_environment.html">Train with Customized Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/tictactoe.html">Train AI Model for Tic-Tac-Toe</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Documentaion:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="documentation/parameters.html">Config Parameters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/large_scale_training.html">Large Scale Training</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/custom_environment.html">Train with Customized Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation/api.html">API</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Modules:</span></p>
 <ul>
@@ -178,7 +182,7 @@
 <span id="tictactoe-module"></span><h1>tictactoe module<a class="headerlink" href="#module-handyrl.envs.tictactoe" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="handyrl.envs.tictactoe.Environment">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.tictactoe.</span></code><code class="sig-name descname"><span class="pre">Environment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.tictactoe.</span></code><code class="sig-name descname"><span class="pre">Environment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="environment.html#handyrl.environment.BaseEnvironment" title="handyrl.environment.BaseEnvironment"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.environment.BaseEnvironment</span></code></a></p>
 <p>test</p>
 <dl class="field-list simple">
@@ -227,52 +231,52 @@
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.action2str">
-<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.action2str" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.action2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.action2str" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.action_length">
-<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.action_length" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.action_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.action_length" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.diff_info">
-<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.diff_info" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.diff_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.diff_info" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.legal_actions">
-<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.legal_actions" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.legal_actions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.legal_actions" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.observation">
-<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.observation" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.observation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.observation" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.outcome">
-<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.outcome" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.outcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.outcome" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.play">
-<code class="sig-name descname"><span class="pre">play</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.play" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">play</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.play"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.play" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.players">
-<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.players" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.players"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.players" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.record_string">
-<code class="sig-name descname"><span class="pre">record_string</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.record_string" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">record_string</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.record_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.record_string" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.reset">
-<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.reset" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reset an environment.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -283,22 +287,22 @@
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.str2action">
-<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.str2action" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.str2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.str2action" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.terminal">
-<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.terminal" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.terminal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.terminal" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.turn">
-<code class="sig-name descname"><span class="pre">turn</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.turn" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">turn</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.turn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.turn" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.envs.tictactoe.Environment.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/tictactoe.html#Environment.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.tictactoe.Environment.update" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
