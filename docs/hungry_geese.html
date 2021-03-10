@@ -177,103 +177,26 @@
   <div class="section" id="module-handyrl.envs.kaggle.hungry_geese">
 <span id="hungry-geese"></span><h1>hungry_geese<a class="headerlink" href="#module-handyrl.envs.kaggle.hungry_geese" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.kaggle.hungry_geese.</span></code><code class="sig-name descname"><span class="pre">Environment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="environment.html#handyrl.environment.BaseEnvironment" title="handyrl.environment.BaseEnvironment"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.environment.BaseEnvironment</span></code></a></p>
-<dl class="py attribute">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.ACTION">
-<code class="sig-name descname"><span class="pre">ACTION</span></code><em class="property"> <span class="pre">=</span> <span class="pre">['NORTH',</span> <span class="pre">'SOUTH',</span> <span class="pre">'WEST',</span> <span class="pre">'EAST']</span></em><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.ACTION" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.NUM_AGENTS">
-<code class="sig-name descname"><span class="pre">NUM_AGENTS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">4</span></em><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.NUM_AGENTS" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<dt id="handyrl.envs.kaggle.hungry_geese.TorusConv2d">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.kaggle.hungry_geese.</span></code><code class="sig-name descname"><span class="pre">TorusConv2d</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#TorusConv2d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.TorusConv2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
 <dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.action2str">
-<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.action2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.action2str" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.action_length">
-<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.action_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.action_length" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.diff_info">
-<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.diff_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.diff_info" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.direction">
-<code class="sig-name descname"><span class="pre">direction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_to</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.direction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.direction" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.legal_actions">
-<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.legal_actions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.legal_actions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.net">
-<code class="sig-name descname"><span class="pre">net</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.net"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.net" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.observation">
-<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.observation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.observation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.outcome">
-<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.outcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.outcome" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.players">
-<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.players"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.players" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.reset">
-<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.reset" title="Permalink to this definition">¶</a></dt>
-<dd><p>Reset an environment.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>args</strong> (<em>dict</em>) – arguments to reset an environment state (e.g. reset a reward, reset a state.)</p>
-</dd>
-</dl>
+<dt id="handyrl.envs.kaggle.hungry_geese.TorusConv2d.forward">
+<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#TorusConv2d.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.TorusConv2d.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
 </dd></dl>
 
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.rule_based_action">
-<code class="sig-name descname"><span class="pre">rule_based_action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.rule_based_action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.rule_based_action" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.step">
-<code class="sig-name descname"><span class="pre">step</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actions</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.step" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.str2action">
-<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.str2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.str2action" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.terminal">
-<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.terminal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.terminal" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.turns">
-<code class="sig-name descname"><span class="pre">turns</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.turns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.turns" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.Environment.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.update" title="Permalink to this definition">¶</a></dt>
+<dl class="py attribute">
+<dt id="handyrl.envs.kaggle.hungry_geese.TorusConv2d.training">
+<code class="sig-name descname"><span class="pre">training</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.TorusConv2d.training" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -304,26 +227,103 @@ registered hooks while the latter silently ignores them.</p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="handyrl.envs.kaggle.hungry_geese.TorusConv2d">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.kaggle.hungry_geese.</span></code><code class="sig-name descname"><span class="pre">TorusConv2d</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kernel_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bn</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#TorusConv2d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.TorusConv2d" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
-<dl class="py method">
-<dt id="handyrl.envs.kaggle.hungry_geese.TorusConv2d.forward">
-<code class="sig-name descname"><span class="pre">forward</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#TorusConv2d.forward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.TorusConv2d.forward" title="Permalink to this definition">¶</a></dt>
-<dd><p>Defines the computation performed at every call.</p>
-<p>Should be overridden by all subclasses.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Although the recipe for forward pass needs to be defined within
-this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
-instead of this since the former takes care of running the
-registered hooks while the latter silently ignores them.</p>
-</div>
-</dd></dl>
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.envs.kaggle.hungry_geese.</span></code><code class="sig-name descname"><span class="pre">Environment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="environment.html#handyrl.environment.BaseEnvironment" title="handyrl.environment.BaseEnvironment"><code class="xref py py-class docutils literal notranslate"><span class="pre">handyrl.environment.BaseEnvironment</span></code></a></p>
+<dl class="py attribute">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.ACTION">
+<code class="sig-name descname"><span class="pre">ACTION</span></code><em class="property"> <span class="pre">=</span> <span class="pre">['NORTH',</span> <span class="pre">'SOUTH',</span> <span class="pre">'WEST',</span> <span class="pre">'EAST']</span></em><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.ACTION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="handyrl.envs.kaggle.hungry_geese.TorusConv2d.training">
-<code class="sig-name descname"><span class="pre">training</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.TorusConv2d.training" title="Permalink to this definition">¶</a></dt>
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.NUM_AGENTS">
+<code class="sig-name descname"><span class="pre">NUM_AGENTS</span></code><em class="property"> <span class="pre">=</span> <span class="pre">4</span></em><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.NUM_AGENTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.reset">
+<code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset an environment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>args</strong> (<em>dict</em>) – arguments to reset an environment state (e.g. reset a reward, reset a state.)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.update">
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.action2str">
+<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.action2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.action2str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.str2action">
+<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.str2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.str2action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.direction">
+<code class="sig-name descname"><span class="pre">direction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos_to</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.direction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.direction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.step">
+<code class="sig-name descname"><span class="pre">step</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actions</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.step" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.diff_info">
+<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.diff_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.diff_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.turns">
+<code class="sig-name descname"><span class="pre">turns</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.turns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.turns" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.terminal">
+<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.terminal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.terminal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.outcome">
+<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.outcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.outcome" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.legal_actions">
+<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.legal_actions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.legal_actions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.action_length">
+<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.action_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.action_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.players">
+<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.players"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.players" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.rule_based_action">
+<code class="sig-name descname"><span class="pre">rule_based_action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.rule_based_action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.rule_based_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.net">
+<code class="sig-name descname"><span class="pre">net</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.net"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.net" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.envs.kaggle.hungry_geese.Environment.observation">
+<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/envs/kaggle/hungry_geese.html#Environment.observation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.envs.kaggle.hungry_geese.Environment.observation" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

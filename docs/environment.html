@@ -181,6 +181,16 @@
             
   <div class="section" id="module-handyrl.environment">
 <span id="environment"></span><h1>environment<a class="headerlink" href="#module-handyrl.environment" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="handyrl.environment.prepare_env">
+<code class="sig-prename descclassname"><span class="pre">handyrl.environment.</span></code><code class="sig-name descname"><span class="pre">prepare_env</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#prepare_env"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.prepare_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="handyrl.environment.make_env">
+<code class="sig-prename descclassname"><span class="pre">handyrl.environment.</span></code><code class="sig-name descname"><span class="pre">make_env</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#make_env"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.make_env" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="py class">
 <dt id="handyrl.environment.BaseEnvironment">
 <em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.environment.</span></code><code class="sig-name descname"><span class="pre">BaseEnvironment</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment" title="Permalink to this definition">¶</a></dt>
@@ -191,46 +201,6 @@
 <dd class="field-odd"><p><strong>args</strong> (<em>dict</em>) – arguments to initialize environment (e.g. make a simulator instance, reset an environment.)</p>
 </dd>
 </dl>
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.action2str">
-<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.action2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.action2str" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.action_length">
-<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.action_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.action_length" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.diff_info">
-<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.diff_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.diff_info" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.legal_actions">
-<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.legal_actions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.legal_actions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.observation">
-<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.observation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.observation" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.outcome">
-<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.outcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.outcome" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.play">
-<code class="sig-name descname"><span class="pre">play</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.play"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.play" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.players">
-<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.players"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.players" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt id="handyrl.environment.BaseEnvironment.reset">
 <code class="sig-name descname"><span class="pre">reset</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.reset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.reset" title="Permalink to this definition">¶</a></dt>
@@ -243,23 +213,13 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.reward">
-<code class="sig-name descname"><span class="pre">reward</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.reward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.reward" title="Permalink to this definition">¶</a></dt>
+<dt id="handyrl.environment.BaseEnvironment.play">
+<code class="sig-name descname"><span class="pre">play</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.play"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.play" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="handyrl.environment.BaseEnvironment.step">
 <code class="sig-name descname"><span class="pre">step</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actions</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.step"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.step" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.str2action">
-<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.str2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.str2action" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.environment.BaseEnvironment.terminal">
-<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.terminal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.terminal" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -273,21 +233,61 @@
 <dd></dd></dl>
 
 <dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.terminal">
+<code class="sig-name descname"><span class="pre">terminal</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.terminal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.terminal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.reward">
+<code class="sig-name descname"><span class="pre">reward</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.reward"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.reward" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.outcome">
+<code class="sig-name descname"><span class="pre">outcome</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.outcome"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.outcome" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.legal_actions">
+<code class="sig-name descname"><span class="pre">legal_actions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.legal_actions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.legal_actions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.action_length">
+<code class="sig-name descname"><span class="pre">action_length</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.action_length"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.action_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.players">
+<code class="sig-name descname"><span class="pre">players</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.players"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.players" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.observation">
+<code class="sig-name descname"><span class="pre">observation</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.observation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.observation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.action2str">
+<code class="sig-name descname"><span class="pre">action2str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.action2str"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.action2str" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.str2action">
+<code class="sig-name descname"><span class="pre">str2action</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.str2action"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.str2action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.environment.BaseEnvironment.diff_info">
+<code class="sig-name descname"><span class="pre">diff_info</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">player</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.diff_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.diff_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt id="handyrl.environment.BaseEnvironment.update">
 <code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reset</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#BaseEnvironment.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.BaseEnvironment.update" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
-
-<dl class="py function">
-<dt id="handyrl.environment.make_env">
-<code class="sig-prename descclassname"><span class="pre">handyrl.environment.</span></code><code class="sig-name descname"><span class="pre">make_env</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#make_env"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.make_env" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="handyrl.environment.prepare_env">
-<code class="sig-prename descclassname"><span class="pre">handyrl.environment.</span></code><code class="sig-name descname"><span class="pre">prepare_env</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env_args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/environment.html#prepare_env"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.environment.prepare_env" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </div>
 

@@ -181,164 +181,6 @@
             
   <div class="section" id="module-handyrl.train">
 <span id="train"></span><h1>train<a class="headerlink" href="#module-handyrl.train" title="Permalink to this headline">¶</a></h1>
-<dl class="py class">
-<dt id="handyrl.train.Batcher">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">Batcher</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">episodes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt id="handyrl.train.Batcher.batch">
-<code class="sig-name descname"><span class="pre">batch</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.batch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.batch" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Batcher.run">
-<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.run" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Batcher.select_episode">
-<code class="sig-name descname"><span class="pre">select_episode</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.select_episode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.select_episode" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Batcher.shutdown">
-<code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.shutdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.shutdown" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="handyrl.train.Learner">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">Learner</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt id="handyrl.train.Learner.entry_server">
-<code class="sig-name descname"><span class="pre">entry_server</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.entry_server"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.entry_server" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.feed_episodes">
-<code class="sig-name descname"><span class="pre">feed_episodes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">episodes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.feed_episodes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.feed_episodes" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.feed_results">
-<code class="sig-name descname"><span class="pre">feed_results</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.feed_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.feed_results" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.latest_model_path">
-<code class="sig-name descname"><span class="pre">latest_model_path</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.latest_model_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.latest_model_path" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.model_path">
-<code class="sig-name descname"><span class="pre">model_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.model_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.model_path" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.run">
-<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.run" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.server">
-<code class="sig-name descname"><span class="pre">server</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.server"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.server" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.shutdown">
-<code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.shutdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.shutdown" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.update" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Learner.update_model">
-<code class="sig-name descname"><span class="pre">update_model</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.update_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.update_model" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="handyrl.train.Trainer">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">Trainer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt id="handyrl.train.Trainer.recheck_update">
-<code class="sig-name descname"><span class="pre">recheck_update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.recheck_update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.recheck_update" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Trainer.report_update">
-<code class="sig-name descname"><span class="pre">report_update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.report_update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.report_update" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Trainer.run">
-<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.run" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Trainer.shutdown">
-<code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.shutdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.shutdown" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Trainer.train">
-<code class="sig-name descname"><span class="pre">train</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.train"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.train" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt id="handyrl.train.Trainer.update">
-<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.update" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt id="handyrl.train.compose_losses">
-<code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">compose_losses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_selected_policies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_advantages</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#compose_losses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.compose_losses" title="Permalink to this definition">¶</a></dt>
-<dd><p>Caluculate loss value</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>losses and statistic values and the number of training data</p>
-</dd>
-<dt class="field-even">Return type</dt>
-<dd class="field-even"><p>tuple</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt id="handyrl.train.compute_loss">
-<code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">compute_loss</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#compute_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.compute_loss" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt id="handyrl.train.forward_prediction">
-<code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">forward_prediction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#forward_prediction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.forward_prediction" title="Permalink to this definition">¶</a></dt>
-<dd><p>Forward calculation via neural network</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>model</strong> (<em>torch.nn.Module</em>) – neural network</p></li>
-<li><p><strong>hidden</strong> – initial hidden state (…, B, P, …)</p></li>
-<li><p><strong>batch</strong> (<em>dict</em>) – training batch (output of make_batch() function)</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>batch outputs of neural network</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>tuple</p>
-</dd>
-</dl>
-</dd></dl>
-
 <dl class="py function">
 <dt id="handyrl.train.make_batch">
 <code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">make_batch</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">episodes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#make_batch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.make_batch" title="Permalink to this definition">¶</a></dt>
@@ -362,6 +204,164 @@
 <p>Basic data shape is (B, T, P, …) .
 (B is batch size, T is time length, P is player count)</p>
 </div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="handyrl.train.forward_prediction">
+<code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">forward_prediction</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#forward_prediction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.forward_prediction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forward calculation via neural network</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>torch.nn.Module</em>) – neural network</p></li>
+<li><p><strong>hidden</strong> – initial hidden state (…, B, P, …)</p></li>
+<li><p><strong>batch</strong> (<em>dict</em>) – training batch (output of make_batch() function)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>batch outputs of neural network</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="handyrl.train.compose_losses">
+<code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">compose_losses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outputs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_selected_policies</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_advantages</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">targets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#compose_losses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.compose_losses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Caluculate loss value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>losses and statistic values and the number of training data</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="handyrl.train.compute_loss">
+<code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">compute_loss</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hidden</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#compute_loss"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.compute_loss" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="handyrl.train.Batcher">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">Batcher</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">episodes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="handyrl.train.Batcher.run">
+<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Batcher.select_episode">
+<code class="sig-name descname"><span class="pre">select_episode</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.select_episode"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.select_episode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Batcher.batch">
+<code class="sig-name descname"><span class="pre">batch</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.batch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.batch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Batcher.shutdown">
+<code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Batcher.shutdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Batcher.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="handyrl.train.Trainer">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">Trainer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="handyrl.train.Trainer.update">
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Trainer.report_update">
+<code class="sig-name descname"><span class="pre">report_update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.report_update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.report_update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Trainer.recheck_update">
+<code class="sig-name descname"><span class="pre">recheck_update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.recheck_update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.recheck_update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Trainer.shutdown">
+<code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.shutdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Trainer.train">
+<code class="sig-name descname"><span class="pre">train</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.train"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Trainer.run">
+<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Trainer.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Trainer.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="handyrl.train.Learner">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">handyrl.train.</span></code><code class="sig-name descname"><span class="pre">Learner</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="handyrl.train.Learner.shutdown">
+<code class="sig-name descname"><span class="pre">shutdown</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.shutdown"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.shutdown" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.model_path">
+<code class="sig-name descname"><span class="pre">model_path</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.model_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.model_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.latest_model_path">
+<code class="sig-name descname"><span class="pre">latest_model_path</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.latest_model_path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.latest_model_path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.update_model">
+<code class="sig-name descname"><span class="pre">update_model</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.update_model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.update_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.feed_episodes">
+<code class="sig-name descname"><span class="pre">feed_episodes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">episodes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.feed_episodes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.feed_episodes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.feed_results">
+<code class="sig-name descname"><span class="pre">feed_results</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.feed_results"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.feed_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.update">
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.update"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.server">
+<code class="sig-name descname"><span class="pre">server</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.server"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.server" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.entry_server">
+<code class="sig-name descname"><span class="pre">entry_server</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.entry_server"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.entry_server" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="handyrl.train.Learner.run">
+<code class="sig-name descname"><span class="pre">run</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/handyrl/train.html#Learner.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#handyrl.train.Learner.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 </dd></dl>
 
 <dl class="py function">
