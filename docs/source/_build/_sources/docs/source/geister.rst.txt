@@ -1,0 +1,7 @@
+geister module
+==============
+
+.. automodule:: geister
+   :members:
+   :undoc-members:
+   :show-inheritance:
