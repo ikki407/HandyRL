@@ -7,6 +7,15 @@ Welcome to HandyRL's documentation!
 ===================================
 
 .. toctree::
+   :maxdepth: 1
+   :caption: Tutorials:
+
+   parameters
+   large_scale_training
+   custom_environment
+   api
+
+.. toctree::
    :maxdepth: 2
    :caption: Modules:
 
